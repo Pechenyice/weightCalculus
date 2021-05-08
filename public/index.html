@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/all.css">
+    <script src="/static/js/Vue.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header__theme theme">
+            <div class="theme__activator"></div>
+            <div class="theme__option theme__option_active">Light</div>
+            <div class="theme__option">Dark</div>
+        </div>
+
+        <h1 class="header__name">Weight calculator</h1>
+
+        <div class="header__profile profile">
+            <div class="profile__icon"><i class="fas fa-user-alt"></i></div>
+            <div class="profile__name">Антон Пяткин</div>
+            <div class="profile__exit"><div class="profile__action">Выйти</div></div>
+        </div>
+    </header>
+
+    <section>
+        <button></button>
+        <div id="app">
+            {{ message }}
+        </div>
+        <div id="app2">
+            <div>
+                <div v-for='meal in meals'>
+                    <i v-bind:class="meal.icon"></i>
+                    {{meal.name}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
