@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 })
 
+app.get('/auth', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/html/auth.html'));
+})
+
 app.listen(process.env.PORT, () => {
   console.log(`port: ${process.env.PORT}`);
 })
