@@ -10,7 +10,6 @@ const path = require('path');
 
 require('dotenv').config();
 
-// const jsonParser = express.json();
 app.use(express.json());
 app.use(cookieParser('key'));
 app.use('/static', express.static(__dirname + '/public'));
@@ -62,8 +61,7 @@ app.get("/api/getMeals", function(req, res){
   collection.find({token: req.signedCookies.token}).toArray(function(err, users){
 
       if(err) return console.log(err);
-      
-      // console.log(meals)
+    
 
       if (users.length == 1) {
         res.send(JSON.stringify({status: 'success', data: users[0].meals}));
@@ -188,8 +186,6 @@ app.post("/api/createUser", function(req, res){
 app.listen(process.env.PORT || 3000, () => {
   console.log(`port: ${process.env.PORT || 3000}`);
 })
-
-
 
 module.exports = app;
 
