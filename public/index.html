@@ -24,7 +24,7 @@
 
             <div class="header__profile profile">
                 <div class="profile__icon"><i class="fas fa-user-alt"></i></div>
-                <div class="profile__name">Антон Пяткин</div>
+                <div class="profile__name">-</div>
                 <div class="profile__exit"><div class="profile__action">Выйти</div></div>
             </div>
         </div>
@@ -56,7 +56,7 @@
                 <input class="profileInfo__data profileInfo__data_radio" type="radio" id="sex_woman" value="woman" name="sex" v-model="sex">
                 <label for="sex_woman">Feminist</label>
             </div>
-            <div class="blockAction">Save</div>
+            <div class="blockAction" v-on:click="update">Save</div>
         </div>
 
         <div class="calc__profileInfo profileInfo" id="addMeal">
