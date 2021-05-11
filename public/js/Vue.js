@@ -212,7 +212,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (resp.status == 'error') alert(resp.message);
 
         for (let e of resp.data) {
-            ingrs.meals[e.type].push({name: e.name, cal: e.cal});
+            ingrs.meals[e.type].push({name: e.name, cal: +e.cal});
         }
     })();
 
