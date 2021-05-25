@@ -121,7 +121,7 @@ app.post("/api/logUser", function(req, res){
       
       console.log(users)
 
-      if (users.ok == 1) {
+      if (users.ok == 1 && users.value != null) {
         console.log(val)
         res.cookie('token', val, {
           maxAge: 1000 * 60 * 15,
