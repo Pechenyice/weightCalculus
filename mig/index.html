@@ -276,22 +276,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
-    3. Файл миграции
+  <a href="#4" class="md-nav__link">
+    4. Файл миграции
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_2" class="md-nav__link">
-    3. Применение миграции
+  <a href="#5" class="md-nav__link">
+    5. Применение миграции
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_3" class="md-nav__link">
-    3. Откат миграции
+  <a href="#6" class="md-nav__link">
+    6. Откат миграции
   </a>
   
 </li>
@@ -364,22 +364,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
-    3. Файл миграции
+  <a href="#4" class="md-nav__link">
+    4. Файл миграции
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_2" class="md-nav__link">
-    3. Применение миграции
+  <a href="#5" class="md-nav__link">
+    5. Применение миграции
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_3" class="md-nav__link">
-    3. Откат миграции
+  <a href="#6" class="md-nav__link">
+    6. Откат миграции
   </a>
   
 </li>
@@ -412,7 +412,7 @@
 <p><img alt="create" src="../mig_create.png" /></p>
 <h3 id="3">3. Папочная структура миграций</h3>
 <p>example: <code>./migrations/1623832948517-example.js</code></p>
-<h3 id="3_1">3. Файл миграции</h3>
+<h3 id="4">4. Файл миграции</h3>
 <pre><code class="language-js">/**
  * Make any changes you need to make to the database here
  */
@@ -434,11 +434,11 @@ async function down () {
 module.exports = { up, down };
 
 </code></pre>
-<h3 id="3_2">3. Применение миграции</h3>
+<h3 id="5">5. Применение миграции</h3>
 <pre><code class="language-bash">&quot;./node_modules/.bin/migrate&quot; up --dbConnectionUri mongodb://localhost/caloriesCalculator
 </code></pre>
 <p><img alt="up" src="../mig_up.png" /></p>
-<h3 id="3_3">3. Откат миграции</h3>
+<h3 id="6">6. Откат миграции</h3>
 <pre><code class="language-bash">&quot;./node_modules/.bin/migrate&quot; down example --dbConnectionUri mongodb://localhost/caloriesCalculator
 </code></pre>
 <p><img alt="down" src="../mig_down.png" /></p>
