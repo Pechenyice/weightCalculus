@@ -14,7 +14,7 @@
     
     
       
-        <title>Model - My Docs</title>
+        <title>Migrations - My Docs</title>
       
     
     
@@ -89,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Model
+              Migrations
             
           </span>
         </div>
@@ -182,71 +182,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Model
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../model/" class="md-nav__link">
         Model
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mongo-db-model" class="md-nav__link">
-    MONGO DB Model
-  </a>
-  
-    <nav class="md-nav" aria-label="MONGO DB Model">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    1. Пример элемента коллекции
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    2. Описание коллекции
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -272,11 +212,99 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../mig/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Migrations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Migrations
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mongoose-based-migrations" class="md-nav__link">
+    MONGOOSE based migrations
+  </a>
+  
+    <nav class="md-nav" aria-label="MONGOOSE based migrations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. Инструмент
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. Пример создания миграции
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. Папочная структура миграций
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    3. Файл миграции
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    3. Применение миграции
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    3. Откат миграции
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -307,23 +335,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mongo-db-model" class="md-nav__link">
-    MONGO DB Model
+  <a href="#mongoose-based-migrations" class="md-nav__link">
+    MONGOOSE based migrations
   </a>
   
-    <nav class="md-nav" aria-label="MONGO DB Model">
+    <nav class="md-nav" aria-label="MONGOOSE based migrations">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
-    1. Пример элемента коллекции
+    1. Инструмент
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. Описание коллекции
+    2. Пример создания миграции
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. Папочная структура миграций
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    3. Файл миграции
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    3. Применение миграции
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    3. Откат миграции
   </a>
   
 </li>
@@ -347,25 +403,45 @@
                 
                 
                 <h1 id="calories-calculator-project">Calories calculator project</h1>
-<h2 id="mongo-db-model">MONGO DB Model</h2>
-<h3 id="1">1. Пример элемента коллекции</h3>
-<p><img alt="Пример элемента коллекции" src="../model.png" /></p>
-<h3 id="2">2. Описание коллекции</h3>
-<p>_id: ObjectId - генерируемый Mongo случайный id</p>
-<p>login: string - логин пользователя</p>
-<p>password: string - засекреченный с помощью sha-256 пароль пользователя</p>
-<p>name: string - имя пользователя на сайте</p>
-<p>surname: string - фамилия пользователя на сайте</p>
-<p>height: int - рост пользователя</p>
-<p>weight: int - вес пользователя</p>
-<p>age: int - возраст пользователя</p>
-<p>sex: string - пол пользователя</p>
-<p>meals: array - массив пользовательских блюд</p>
-<p>meals.meal: object - объект пользовательского блюда</p>
-<p>meals.meal.type: string - тип пользовательского блюда</p>
-<p>meals.meal.name: string - название пользовательского блюда</p>
-<p>meals.meal.cal: int - калорийность пользовательского блюда</p>
-<p>token: string - сгенерированный sha-256 токен авторизации пользователя</p>
+<h2 id="mongoose-based-migrations">MONGOOSE based migrations</h2>
+<h3 id="1">1. Инструмент</h3>
+<p><a href="https://www.npmjs.com/package/migrate-mongoose">migrate-mongoose</a></p>
+<h3 id="2">2. Пример создания миграции</h3>
+<pre><code class="language-bash">&quot;./node_modules/.bin/migrate&quot; create example  --dbConnectionUri mongodb://localhost/caloriesCalculator
+</code></pre>
+<p><img alt="create" src="../mig_create.png" /></p>
+<h3 id="3">3. Папочная структура миграций</h3>
+<p>example: <code>./migrations/1623832948517-example.js</code></p>
+<h3 id="3_1">3. Файл миграции</h3>
+<pre><code class="language-js">/**
+ * Make any changes you need to make to the database here
+ */
+async function up () {
+  await new Promise((resolve, reject) =&gt; {
+    setTimeout(()=&gt; { resolve('upped'); }, 3000);
+  });
+}
+
+/**
+ * Make any changes that UNDO the up function side effects here (if possible)
+ */
+async function down () {
+  await new Promise((resolve, reject) =&gt; {
+    setTimeout(()=&gt; { resolve('downed'); }, 3000);
+  });
+}
+
+module.exports = { up, down };
+
+</code></pre>
+<h3 id="3_2">3. Применение миграции</h3>
+<pre><code class="language-bash">&quot;./node_modules/.bin/migrate&quot; up --dbConnectionUri mongodb://localhost/caloriesCalculator
+</code></pre>
+<p><img alt="up" src="../mig_up.png" /></p>
+<h3 id="3_3">3. Откат миграции</h3>
+<pre><code class="language-bash">&quot;./node_modules/.bin/migrate&quot; down example --dbConnectionUri mongodb://localhost/caloriesCalculator
+</code></pre>
+<p><img alt="down" src="../mig_down.png" /></p>
                 
               
               
@@ -384,7 +460,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href=".." class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../urls/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -393,25 +469,11 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Rest
-            </div>
-          </div>
-        </a>
-      
-      
-        <a href="../urls/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
               Urls
             </div>
           </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
         </a>
+      
       
     </nav>
   
